@@ -5,19 +5,19 @@
 
 packages:
 - completed:
+    commit: 1fde661d897c500534769960584b29e8c39e8abb
+    git: git@github.com:bitnomial/prometheus.git
     name: prometheus
-    version: 2.2.2
-    git: git@github.com:bitnomial/prometheus.git
     pantry-tree:
-      size: 1969
       sha256: 904843022ed0eabaf4e3dfc8f36e28e7365788c91e1d471b1eba56e1fca7511d
-    commit: 1fde661d897c500534769960584b29e8c39e8abb
+      size: 1969
+    version: 2.2.2
   original:
-    git: git@github.com:bitnomial/prometheus.git
     commit: 1fde661d897c500534769960584b29e8c39e8abb
+    git: git@github.com:bitnomial/prometheus.git
 snapshots:
 - completed:
+    sha256: af5d667f6096e535b9c725a72cffe0f6c060e0568d9f9eeda04caee70d0d9d2d
     size: 649133
     url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/12.yaml
-    sha256: af5d667f6096e535b9c725a72cffe0f6c060e0568d9f9eeda04caee70d0d9d2d
   original: lts-20.12

@@ -1,3 +1,6 @@
 resolver: lts-20.12
 packages:
 - .
+extra-deps:
+  - git: git@github.com:bitnomial/prometheus.git
+    commit: 1fde661d897c500534769960584b29e8c39e8abb
