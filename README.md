@@ -1,8 +1,30 @@
 # lock-yaml-field-order
 
 On noticing a field order change in `stack.yaml.lock` I added one source
-repository package extra dependency. Using ghcup, I regenerated the lock file
-implicitly (explicitly with `--stack-yaml=stack.yaml` yields the same results).
+repository package extra dependency to a stack project generated using:
+
+```
+stack new lock-yaml-field-order new-template --bare
+```
+
+```diff
+diff --git a/stack.yaml b/stack.yaml
+index c39389f..6e7ee06 100644
+--- a/stack.yaml
++++ b/stack.yaml
+@@ -1,3 +1,6 @@
+ resolver: lts-20.12
+ packages:
+-- .
+\ No newline at end of file
++- .
++extra-deps:
++  - git: git@github.com:bitnomial/prometheus.git
++    commit: 1fde661d897c500534769960584b29e8c39e8abb
+```
+
+Using ghcup, I regenerated the lock file implicitly (explicitly with
+`--stack-yaml=stack.yaml` yields the same results).
 
 With stack versions 2.7.3 and 2.7.5 the field order is:
 
