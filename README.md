@@ -1,4 +1,4 @@
-# lock-yaml-field-order
+# stack-lock-yaml-field-order
 
 On noticing a field order change in `stack.yaml.lock` I added one source
 repository package extra dependency to a stack project generated using:
